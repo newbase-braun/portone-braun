@@ -22,7 +22,7 @@ export class PaymentComponent implements OnInit {
   isBizNumRequired = false;
 
   paymentForm = new FormGroup({
-    pg: new FormControl(PGS[0].value),
+    pg: new FormControl(PGS[1].value),
     pay_method: new FormControl(),
     card_quota: new FormControl(),
     vbank_due: new FormControl('', [Validators.required]),
@@ -88,7 +88,7 @@ export class PaymentComponent implements OnInit {
 
   onSubmit(): void {
     /* 가맹점 식별코드 */
-    const userCode = 'imp19424728';
+    const userCode = 'imp61558535';
     const formValues = this.paymentForm.getRawValue();
     const {
       pg,

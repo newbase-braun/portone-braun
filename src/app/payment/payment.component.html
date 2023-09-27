@@ -30,7 +30,7 @@
         </option>
       </select>
     </div>
-    <div *ngIf="isQuotaRequired">
+    <!-- <div *ngIf="isQuotaRequired">
       <label for="quotas">할부개월수</label>
       <select formControlName="card_quota" id="quotas">
         <option *ngFor="let quota of QuotaOption" [value]="quota.value">
@@ -49,7 +49,7 @@
     <div *ngIf="isDigitalRequired">
       <label for="digital">실물여부</label>
       <mat-slide-toggle formControlName="digital" id="digital"></mat-slide-toggle>
-    </div>
+    </div> -->
     <div>
       <label for="escrow">에스크로</label>
       <mat-slide-toggle formControlName="escrow" id="escrow"></mat-slide-toggle>
